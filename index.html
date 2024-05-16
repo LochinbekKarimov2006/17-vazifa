@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?pluns=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+   <main>
+    <div class="div-1 max-w-5xl bg-sky-300 from-slate-500 p-3 rounded-lg m-auto mt-5" style=" background-color: rgba(255, 255, 255, 0.438);">
+      <div>
+        <div class="flex gap-x-5 justify-between">
+          <div class="div-4 rounded-lg h-28 flex items-center justify-between">
+            <button><i class="fa-solid fa-angle-left"></i></button>
+            <img class="img10" src="./img/img1.jpg" alt="">
+            <button><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+         <textarea name="" id="text" cols="" rows="4" placeholder="O'zim haqimdagi malumodlarim" class="w-3/4 rounded-lg p-2 text-sm overflow-auto max-w-none" style=" background-color: rgba(255, 255, 255, 0.194)"></textarea>
+        </div>
+      </div>
+      <h1 class="mb-2 font-bold text-center text-lg">Mening malumodlarim</h1>
+      <div>
+        <form class="grid grid-cols-2 gap-x-5 gap-y-3 form1" >
+          <div class="flex flex-col">
+            <label class="text-sm font-semibold" for="name">Isminggizni kiriting</label>
+            <input required type="text" id="name" class="border-0 rounded-lg pl-2 h-8" placeholder="Name" style=" background-color: rgba(255, 255, 255, 0.696)">
+          </div>
+          <div class="flex flex-col">
+            <label class="text-sm font-semibold" for="familya">Foamilyanggizni kiriting</label>
+            <input required type="text" id="familya" class="border-0 rounded-lg pl-2 h-8" placeholder="Femili"  style=" background-color: rgba(255, 255, 255, 0.696)">
+          </div>
+          <div class="flex flex-col">
+            <label class="text-sm font-semibold" for="tel">Telefon raqam kiriting</label>
+            <input required type="tel" id="tel" class="border-2 pl-2 rounded-lg h-8" placeholder="Telefon"  style=" background-color: rgba(255, 255, 255, 0.696)">
+          </div>
+          <div class="flex flex-col">
+            <label class="text-sm font-semibold" for="tugilgansana">Tug'ilgan sanani kiriting</label>
+            <input required type="date" id="tugilgansana" class="border rounded-lg pl-2 h-8" placeholder="Sana"  style=" background-color: rgba(255, 255, 255, 0.696)">
+          </div>
+          <div class="flex flex-col">
+            <label class="text-sm font-semibold" for="email">Emailinggizni kiriting</label>
+            <input required type="email" id="email" class="border pl-2 rounded-lg h-8 " placeholder="Email"  style=" background-color: rgba(255, 255, 255, 0.696)">
+          </div>
+          <div class="flex flex-col">
+            <label class="text-sm font-semibold" for="parol">Parolingizni kiriting</label>
+            <input required type="password" id="parol" class="border rounded-lg pl-2 h-8" placeholder="parol"  style=" background-color: rgba(255, 255, 255, 0.696)">
+          </div>
+        </font>
+      </div>
+      <font>
+        <h1 class="my-2 mt-4 text-lg font-bold">Jinsinggiz</h1>
+        <div class="grid grid-cols-3 text-center justify-around">
+          <h1>Erkak</h1>
+          <h1>Tanlanmasin</h1>
+          <h1>Ayol</h1>
+          <input type="radio" name="a">
+          <input type="radio" name="a">
+          <input type="radio" name="a">
+        </div>
+        <button type="submit" class="button1 rounded-lg transition-all w-full bg-teal-400 mt-3 h-9 hover:bg-emerald-700">Jonatish</button>
+      </form>
+    </div>
+    <div class="div-10" ></div>
+   </main>
+  <div class="div-11">
+    <div class="div-12 max-w-7xl h-9 bg-slate-700 m-auto ">
+      <nav>
+        <h1>LOGO</h1>
+        <div class=" w-full  bg-emerald-700 flex items-center justify-between ">
+          <button class="button2 flex items-center justify-center p-10 w-28 h-28 text-7xl"><i class="fa-solid fa-plus"></i></button>
+          <button class="button3 flex items-center justify-center p-10 w-28 h-28 text-7xl"><i class="fa-solid fa-trash-can"></i></i></button>
+        </div>
+        <div>
+          <a href=""></a>
+        </div>
+        <div class="div-13   grid grid-cols-3 gap-5 mt-10">
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="div100"></div>
+    <script src="./main.js"></script>
+</body>
+</html>
